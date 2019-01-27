@@ -20,8 +20,7 @@ export const handler = async (event: AWSLambda.APIGatewayEvent, context: any) =>
         try {
             resp = await axios.post("https://www.floatplane.com/api/auth/login", {
                 username: request.body.username,
-                password: request.body.password,
-                ...corsHeaders
+                password: request.body.password
             }, {})
         } catch (err) {
             resp = err.response
