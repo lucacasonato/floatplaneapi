@@ -13,8 +13,8 @@ Below are all the request types we support now (ticked) and the ones that we wan
   - [x] Login w/ Username Password
     - [x] 2FA
   - [x] Get user info
-  - [ ] Check if admin
-  - [ ] Check if creator
+  - [x] Check if admin
+  - [x] Check if creator
   - [ ] Get Subscriptions
   - [ ] Get ID from name
   - [ ] Get Activity
