@@ -31,7 +31,7 @@ Below are all the request types we support now (ticked) and the ones that we wan
     - [ ] Place comments
   - [ ] Stream (m3u8)
   - [ ] Download (mp4)
-  - [ ] Get edges
+  - [ ] List edges
 - [ ] Livestream
   - [ ] Video
   - [ ] Chat
