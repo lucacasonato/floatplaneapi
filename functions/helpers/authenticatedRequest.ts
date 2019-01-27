@@ -1,5 +1,6 @@
 import axios from "axios";
 import { stringify } from "querystring";
+import corsHeaders from "./corsHeaders";
 
 export const authenticatedGet = (url: string, authorization: string, queryOptions?: { [name: string]: string }) => {
     return axios.get(queryOptions ? `${url}?${stringify(queryOptions)}` : url, {
