@@ -1,5 +1,6 @@
 import { parseEvent } from "./helpers/parseEvent";
 import { authenticatedGet } from "./helpers/authenticatedRequest";
+import { responseInternalServerError, response } from "./helpers/response";
 
 export const handler = async (event: AWSLambda.APIGatewayEvent, context: any) => {
     try {
@@ -14,16 +15,8 @@ export const handler = async (event: AWSLambda.APIGatewayEvent, context: any) =>
 
         console.log(resp)
             
-        return {
-            statusCode: resp.status,
-            body: JSON.stringify(resp.data)
-        }    
+        return response(resp.status, resp.data)
     } catch(e) {
-        return {
-            statusCode: 500,
-            body: JSON.stringify({
-                error: "internal server error"
-            })
-        }    
+        return responseInternalServerError() 
     }
 }
