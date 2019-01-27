@@ -1,0 +1,9 @@
+{
+    "types": [
+        "aws-lambda",
+        "node"
+    ],
+    "compilerOptions": {
+        "lib": ["es2017"]
+    }
+}
