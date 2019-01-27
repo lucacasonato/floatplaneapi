@@ -1,1 +1,3 @@
+/v1/auth/login      /.netlify/functions/user_login
+/v1/auth/check2fa   /.netlify/functions/user_check2fa
 /       https://github.com/CreativeGuy2013/FloatplaneAPI
