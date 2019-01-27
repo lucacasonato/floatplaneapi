@@ -1,6 +1,15 @@
-/v1/auth/login      /.netlify/functions/user_login      200
-/v1/auth/check2fa   /.netlify/functions/user_check2fa   200
-/v1/user/info id=:id        /.netlify/functions/user_getInfo?id=:id         200
-/v1/user/creator id=:id     /.netlify/functions/user_isCreator?id=:id    200
-/v1/user/admin id=:id       /.netlify/functions/user_isAdmin?id=:id         200
-/       https://github.com/CreativeGuy2013/FloatplaneAPI
+#auth
+/v1/auth/login                      /.netlify/functions/user_login                              200
+/v1/auth/check2fa                   /.netlify/functions/user_check2fa                           200
+
+#user
+/v1/user/self                       /.netlify/functions/user_getSelf                            200
+/v1/user/info id=:id                /.netlify/functions/user_getInfo?id=:id                     200
+/v1/user/creator id=:id             /.netlify/functions/user_isCreator?id=:id                   200
+/v1/user/admin id=:id               /.netlify/functions/user_isAdmin?id=:id                     200
+/v1/user/subscriptions              /.netlify/functions/user_getSubscriptions                   200
+/v1/user/activity id=:id            /.netlify/functions/user_getActivity?id=:id                 200
+/v1/user/named username=:username   /.netlify/functions/user_getInfoByName?username=:username   200
+
+#base to github
+/                                   https://github.com/CreativeGuy2013/FloatplaneAPI
