@@ -1,4 +1,4 @@
-export const parseEvent = (event: AWSLambda.APIGatewayEvent): { auth_token: string, body: any, queryStringParameters: { [name: string]: string } } => {
+export const parseEvent = (event: AWSLambda.APIGatewayEvent): { auth_token: string, body: any, queryStringParameters: { [name: string]: string }, method: string } => {
     var parsedBody = null
     try {
         var body = event.isBase64Encoded ? Buffer.from(event.body, 'base64').toString() : event.body
@@ -13,9 +13,12 @@ export const parseEvent = (event: AWSLambda.APIGatewayEvent): { auth_token: stri
 
     var queryStringParameters = event.queryStringParameters
 
+    var method = event.httpMethod
+
     return {
         auth_token: auth_token,
         body: parsedBody,
         queryStringParameters,
+        method,
     }
 }

@@ -8,6 +8,10 @@ export const handler = async (event: AWSLambda.APIGatewayEvent, context: any): P
     try {
         const request = parseEvent(event)
 
+        if (request.method === "OPTIONS") {
+            return response(200, {})
+        }
+
         if (!request.body || !request.body.username || !request.body.password) {
             return responseError(400, "username or password not supplied or misformed", resp.data)
         }

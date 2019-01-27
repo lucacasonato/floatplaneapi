@@ -6,6 +6,10 @@ export const handler = async (event: AWSLambda.APIGatewayEvent, context: any) =>
     try {
         const request = parseEvent(event)
 
+        if (request.method === "OPTIONS") {
+            return response(200, {})
+        }
+        
         var resp = null
         try {
             resp = await authenticatedGet(`https://www.floatplane.com/api/user/info`, request.auth_token, request.queryStringParameters)
