@@ -16,8 +16,6 @@ export const handler = async (event: AWSLambda.APIGatewayEvent, context: any) =>
         } catch (err) {
             resp = err.response
         }
-
-        console.log(resp)
             
         return response(resp.status, resp.data)
     } catch(e) {
