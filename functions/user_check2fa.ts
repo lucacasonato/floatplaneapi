@@ -1,5 +1,3 @@
-import axios from "axios";
-import setCookieParser from "set-cookie-parser";
 import { parseEvent } from "./helpers/parseEvent";
 import { authenticatedPost } from "./helpers/authenticatedRequest";
 
