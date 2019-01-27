@@ -31,5 +31,5 @@
 /v1/edges/list   /.netlify/functions/edge_list   200
 
 #base to github
-/   https://github.com/CreativeGuy2013/FloatplaneAPI 200
+/   https://docs.floatplaneapi.com
 /*   404.json 404
