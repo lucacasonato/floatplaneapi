@@ -12,12 +12,13 @@ Below are all the request types we support now (ticked) and the ones that we wan
 - [x] Users
   - [x] Login w/ Username Password
     - [x] 2FA
+  - [x] Get self
   - [x] Get user info
   - [x] Check if admin
   - [x] Check if creator
-  - [x] Get Subscriptions
+  - [x] Get subscriptions
   - [x] Get ID from name
-  - [x] Get Activity
+  - [x] Get activity
 - [ ] Creators
   - [ ] Get videos
   - [ ] Get info
