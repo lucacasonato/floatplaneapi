@@ -13,7 +13,7 @@ export const handler = async (event: AWSLambda.APIGatewayEvent, context: any): P
         }
 
         if (!request.body || !request.body.username || !request.body.password) {
-            return responseError(400, "username or password not supplied or misformed", resp.data)
+            return responseError(400, "username or password not supplied or misformed")
         }
     
         var resp = null
