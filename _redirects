@@ -1,4 +1,4 @@
-/v1/auth/login      /.netlify/functions/user_login
-/v1/auth/check2fa   /.netlify/functions/user_check2fa
-/v1/user/info id=:id       /.netlify/functions/user_info_get?id=:id
+/v1/auth/login      /.netlify/functions/user_login      200
+/v1/auth/check2fa   /.netlify/functions/user_check2fa   200
+/v1/user/info id=:id       /.netlify/functions/user_info_get?id=:id     200
 /       https://github.com/CreativeGuy2013/FloatplaneAPI
