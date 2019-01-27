@@ -12,7 +12,7 @@ Below are all the request types we support now (ticked) and the ones that we wan
 - [ ] Users
   - [x] Login w/ Username Password
     - [x] 2FA
-  - [ ] Get user info
+  - [x] Get user info
   - [ ] Check if admin
   - [ ] Check if creator
   - [ ] Get Subscriptions
