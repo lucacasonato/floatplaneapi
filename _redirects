@@ -1,3 +1,5 @@
+/*  404.json  404
+
 #auth
 /v1/auth/login                      /.netlify/functions/user_login                              200
 /v1/auth/check2fa                   /.netlify/functions/user_check2fa                           200
@@ -30,6 +32,5 @@
 #edges
 /v1/edges/list   /.netlify/functions/edge_list   200
 
-#base to github
+#base to docs
 /   https://docs.floatplaneapi.com
-/*   404.json 404
