@@ -9,15 +9,15 @@ floatplaneapi.com is a way to interface with the Floatplane backend service. It 
 ## What API calls are currently supported?
 Below are all the request types we support now (ticked) and the ones that we want to implement (not ticked). If we missed anything please PR or open an issue.
 
-- [ ] Users
+- [x] Users
   - [x] Login w/ Username Password
     - [x] 2FA
   - [x] Get user info
   - [x] Check if admin
   - [x] Check if creator
-  - [ ] Get Subscriptions
-  - [ ] Get ID from name
-  - [ ] Get Activity
+  - [x] Get Subscriptions
+  - [x] Get ID from name
+  - [x] Get Activity
 - [ ] Creators
   - [ ] Get videos
   - [ ] Get info
