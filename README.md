@@ -23,15 +23,19 @@ Below are all the request types we support now (ticked) and the ones that we wan
   - [x] Get videos
   - [x] Get info
   - [x] Get ID from name
-- [ ] Videos
-  - [ ] Get info
-  - [ ] Get related videos
-  - [ ] Comments
-    - [ ] Get comments
-    - [ ] Place comments
-  - [ ] Stream (m3u8)
-  - [ ] Download (mp4)
-  - [ ] List edges
+- [x] Videos
+  - [x] Get info
+  - [x] Get related videos
+  - [x] Comments
+    - [x] Get comments
+    - [x] Place comments
+    - [x] Like comment
+    - [x] Dislike comment
+    - [x] Clear like on comment
+  - [x] Stream (m3u8)
+  - [x] Download (mp4)
+- [x] Edges
+    - [x] List edges
 - [ ] Livestream
   - [ ] Video
   - [ ] Chat

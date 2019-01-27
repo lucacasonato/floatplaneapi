@@ -16,5 +16,19 @@
 /v1/creator/videos creatorGUID=:creatorGUID limit=:limit    /.netlify/functions/creator_getVideos?creatorGUID=:creatorGUID&limit=:limit     200
 /v1/creator/named creatorURL=:creatorURL                    /.netlify/functions/creator_getInfoByName?creatorURL=:creatorURL                200
 
+#video
+/v1/video/info videoGUID=:videoGUID                 /.netlify/functions/video_getInfo?videoGUID=:videoGUID                  200
+/v1/video/related videoGUID=:videoGUID              /.netlify/functions/video_getRelated?videoGUID=:videoGUID               200
+/v1/video/url/stream guid=:guid quality=:quality    /.netlify/functions/video_getStreamURL?guid=:guid&quality=:quality      200
+/v1/video/url/download guid=:guid quality=:quality  /.netlify/functions/video_getDownloadURL?guid=:guid&quality=:quality    200
+/v1/video/comments videoGUID=:videoGUID             /.netlify/functions/video_getComments?videoGUID=:videoGUID              200
+/v1/video/comment                                   /.netlify/functions/video_placeComment                                  200
+/v1/video/comment/like                              /.netlify/functions/video_likeComment                                   200
+/v1/video/comment/dislike                           /.netlify/functions/video_dislikeComment                                200
+/v1/video/comment/neutral                           /.netlify/functions/video_neutralComment                                200
+
+#edges
+/v1/edges   /.netlify/functions/edge_list   200
+
 #base to github
-/                                   https://github.com/CreativeGuy2013/FloatplaneAPI
+/   https://github.com/CreativeGuy2013/FloatplaneAPI
