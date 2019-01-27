@@ -19,10 +19,10 @@ Below are all the request types we support now (ticked) and the ones that we wan
   - [x] Get subscriptions
   - [x] Get ID from name
   - [x] Get activity
-- [ ] Creators
-  - [ ] Get videos
-  - [ ] Get info
-  - [ ] Get ID from name
+- [x] Creators
+  - [x] Get videos
+  - [x] Get info
+  - [x] Get ID from name
 - [ ] Videos
   - [ ] Get info
   - [ ] Get related videos

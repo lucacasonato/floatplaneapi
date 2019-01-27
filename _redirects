@@ -11,5 +11,10 @@
 /v1/user/activity id=:id            /.netlify/functions/user_getActivity?id=:id                 200
 /v1/user/named username=:username   /.netlify/functions/user_getInfoByName?username=:username   200
 
+#creator
+/v1/creator/info creatorGUID=:creatorGUID                   /.netlify/functions/creator_getInfo?creatorGUID=:creatorGUID                    200
+/v1/creator/videos creatorGUID=:creatorGUID limit=:limit    /.netlify/functions/creator_getVideos?creatorGUID=:creatorGUID&limit=:limit     200
+/v1/creator/named creatorURL=:creatorURL                    /.netlify/functions/creator_getInfoByName?creatorURL=:creatorURL                200
+
 #base to github
 /                                   https://github.com/CreativeGuy2013/FloatplaneAPI
