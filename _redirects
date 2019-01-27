@@ -28,7 +28,7 @@
 /v1/video/comment/neutral                           /.netlify/functions/video_neutralComment                                200
 
 #edges
-/v1/edges   /.netlify/functions/edge_list   200
+/v1/edges/list   /.netlify/functions/edge_list   200
 
 #base to github
 /   https://github.com/CreativeGuy2013/FloatplaneAPI
