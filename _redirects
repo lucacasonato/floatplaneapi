@@ -6,7 +6,7 @@
 /v1/user/info id=:id                /.netlify/functions/user_getInfo?id=:id                     200
 /v1/user/creator id=:id             /.netlify/functions/user_isCreator?id=:id                   200
 /v1/user/admin id=:id               /.netlify/functions/user_isAdmin?id=:id                     200
-/v1/user/subscriptions id=:id       /.netlify/functions/user_getSubscriptions?id=:id            200
+/v1/user/subscriptions              /.netlify/functions/user_getSubscriptions                   200
 /v1/user/activity id=:id            /.netlify/functions/user_getActivity?id=:id                 200
 /v1/user/named username=:username   /.netlify/functions/user_getInfoByName?username=:username   200
 

@@ -12,7 +12,7 @@ export const handler = async (event: AWSLambda.APIGatewayEvent, context: any) =>
 
         var resp = null
         try {
-            resp = await authenticatedGet(`https://www.floatplane.com/api/user/subscriptions`, request.auth_token, request.queryStringParameters)
+            resp = await authenticatedGet(`https://www.floatplane.com/api/user/subscriptions`, request.auth_token)
         } catch (err) {
             resp = err.response
         }
