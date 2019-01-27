@@ -10,8 +10,8 @@ floatplaneapi.com is a way to interface with the Floatplane backend service. It 
 Below are all the request types we support now (ticked) and the ones that we want to implement (not ticked). If we missed anything please PR or open an issue.
 
 - [ ] Users
-  - [ ] Login w/ Username Password
-    - [ ] 2FA
+  - [x] Login w/ Username Password
+    - [x] 2FA
   - [ ] Get user info
   - [ ] Check if admin
   - [ ] Check if creator

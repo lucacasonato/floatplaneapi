@@ -1,0 +1,3 @@
+[build]
+    command = "npm i; npm run-script build"  
+    functions = "functions_deploy"
