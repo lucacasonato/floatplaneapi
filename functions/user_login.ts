@@ -1,6 +1,7 @@
 import axios from "axios";
 import setCookieParser from "set-cookie-parser";
 import { parseEvent } from "./helpers/parseEvent";
+import corsHeaders from "./helpers/corsHeaders";
 
 export const handler = async (event: AWSLambda.APIGatewayEvent, context: any) => {
     try {
@@ -19,7 +20,8 @@ export const handler = async (event: AWSLambda.APIGatewayEvent, context: any) =>
         try {
             resp = await axios.post("https://www.floatplane.com/api/auth/login", {
                 username: request.body.username,
-                password: request.body.password
+                password: request.body.password,
+                ...corsHeaders
             }, {})
         } catch (err) {
             resp = err.response
