@@ -47,7 +47,7 @@ _We are not planning to support anything to do with payments and subscribing/can
 Sure! No problem. Shoot me a message on Twitter @creativeguy2013 and ill transfer the domain ASAP. :-)
 
 # How to use
-As you can see the project is not really ready. Once we have the basics working we will write this section.
+Check out the docs: https://docs.floatplaneapi.com/rest-api/getting-started
 
 # Licence
 We use the MIT Licence. You can find it in the LICENCE file. This approximately means you are free to do whatever you want with the project as long as you don't sue us if something doesn't work or is not as you like.
